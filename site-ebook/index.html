@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Criança Emocionalmente Forte — Método R.E.C.</title>
+  <meta name="description" content="Como transformar a ansiedade em equilíbrio com o Método R.E.C. — Rotina Emocional Consciente. Técnicas práticas para sono, emoções e comportamento.">
+  <link rel="canonical" href="https://criancaemocionalmenteforte.com/">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#11294c">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Criança Emocionalmente Forte">
+  <meta property="og:title" content="Criança Emocionalmente Forte — Método R.E.C.">
+  <meta property="og:description" content="Como transformar a ansiedade em equilíbrio com o Método R.E.C. Técnicas práticas para sono, emoções e comportamento.">
+  <meta property="og:url" content="https://criancaemocionalmenteforte.com/">
+  <meta property="og:image" content="https://criancaemocionalmenteforte.com/og.jpg?v=1">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Capa do ebook Criança Emocionalmente Forte">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Criança Emocionalmente Forte — Método R.E.C.">
+  <meta name="twitter:description" content="Como transformar a ansiedade em equilíbrio com o Método R.E.C.">
+  <meta name="twitter:image" content="https://criancaemocionalmenteforte.com/og.jpg?v=1">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Estilos originais (com pequenos acréscimos) -->
+  <style>
+    :root{
+      --bg1:#153a67;
+      --bg2:#11294c;
+      --panel:#143357;
+      --line:#1f476f;
+      --text:#e8f2ff;
+      --muted:#b7c9e6;
+      --btn1:#ff1a1a;
+      --btn2:#d80000;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:var(--text); line-height:1.65;
+      background:radial-gradient(1100px 760px at 78% -12%, var(--bg1) 0%, var(--bg2) 60%) no-repeat, var(--bg2);
+      padding-bottom:90px;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1150px;margin:0 auto;padding:0 18px}
+
+    header{padding:40px 0}
+    .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:center}
+    .kicker{
+      margin:0 0 8px;color:#8fd6ff;font-weight:800;
+      font-size:clamp(1.15rem, 2.6vw, 1.6rem);letter-spacing:.2px;
+    }
+    h1{margin:.2rem 0 1rem;font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.1}
+    .lead{font-size:1.08rem;color:var(--muted);margin:0 0 16px}
+    .bullets{margin:14px 0 18px;padding-left:18px}
+    .bullets li{margin:.5rem 0}
+    picture,img{width:100%;height:auto;border-radius:14px;box-shadow:0 22px 60px rgba(0,0,0,.35)}
+
+    .btn{
+      display:inline-block;font-weight:900;border:0;cursor:pointer;border-radius:14px;
+      color:#ffffff;background:linear-gradient(135deg,var(--btn1),var(--btn2));
+      box-shadow:0 10px 26px rgba(27,164,255,.38);
+      transition:transform .08s ease, filter .2s ease;
+      padding:16px 26px;font-size:clamp(1.02rem,2.2vw,1.18rem);
+    }
+    .btn:hover{filter:brightness(1.06)}
+    .btn:active{transform:translateY(1px)}
+
+    section{padding:18px 0}
+    .card{
+      background:linear-gradient(180deg, rgba(29,64,105,.75), rgba(17,41,76,.75));
+      border:1px solid var(--line);border-radius:16px;padding:20px;backdrop-filter: blur(4px);
+    }
+    .sec-title{
+      margin:0 0 10px;font-weight:1000;
+      font-size:clamp(1.9rem, 3vw, 2.2rem);letter-spacing:.2px;
+      text-shadow:0 2px 0 rgba(0,0,0,.15);
+    }
+    .faq-title{
+      margin:0 0 10px;font-weight:1000;
+      font-size:clamp(1.9rem, 3vw, 2.2rem);letter-spacing:.2px;
+      text-shadow:0 2px 0 rgba(0,0,0,.15);
+    }
+    .cta-block{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:14px}
+    .grid-2{grid-template-columns:1fr 1fr}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+
+    .sticky-cta{
+      position:fixed;left:0;right:0;bottom:0;z-index:50;
+      background:rgba(14,33,63,.92);border-top:1px solid var(--line);
+      box-shadow:0 -10px 24px rgba(0,0,0,.35);
+    }
+    .sticky-cta .bar{display:flex;align-items:center;gap:14px;justify-content:flex-end;padding:12px 18px}
+    .sticky-cta small{color:var(--muted)}
+
+    /* Novos elementos */
+    .urgency-badge {
+      display: inline-block;
+      background: #ff1a1a;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 800;
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+    .testimonial-box {
+      background: rgba(29,64,105,.4);
+      border-left: 3px solid var(--btn1);
+      padding: 12px;
+      margin: 16px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .bonus-badge {
+      background: var(--btn1);
+      color: #ffffff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 800;
+      font-size: 0.85em;
+    }
+    .countdown {
+      color: var(--btn1);
+      font-weight: 700;
+    }
+  </style>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CB121ELC9D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','G-CB121ELC9D');
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1517929249625297');
+    fbq('track','PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1517929249625297&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <!-- Schema.org Product -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Criança Emocionalmente Forte — Método R.E.C.",
+    "description":"Ebook com técnicas práticas para ansiedade infantil, sono e comportamento. 100 páginas.",
+    "image":["https://criancaemocionalmenteforte.com/og.jpg"],
+    "brand":{"@type":"Brand","name":"Viviane"},
+    "offers":{
+      "@type":"Offer",
+      "url":"https://pay.hotmart.com/Y103542772O",
+      "priceCurrency":"BRL",
+      "price":"27.90",
+      "availability":"https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HERO (CTA #1) -->
+  <header>
+    <div class="wrap hero">
+      <div>
+        <span class="urgency-badge">OFERTA POR TEMPO LIMITADO</span>
+        <p class="kicker">Ansiedade infantil • Sono • Comportamento</p>
+        <h1>Transforme a Ansiedade do Seu Filho em Equilíbrio</h1>
+        <p class="lead">Com o Método R.E.C. — Rotina Emocional Consciente. <strong>De <s>R$ 47,90</s> por R$ 27,90!</strong></p>
+
+        <!-- Depoimento -->
+        <div class="testimonial-box">
+          <p><em>"Minha filha parou de ter pesadelos em 1 semana! O método é simples e mudou nossa rotina."</em></p>
+          <p style="margin:8px 0 0;font-size:.9em"><strong>— Ana, mãe da Lara (4 anos)</strong></p>
+        </div>
+
+        <ul class="bullets">
+          <li><strong>R — Regular:</strong> respiração espelho, mãos quentes e rituais de transição</li>
+          <li><strong>E — Expressar:</strong> linguagem emocional, cores e termômetro das emoções</li>
+          <li><strong>C — Conectar:</strong> frases de segurança e micro-interações ao longo do dia</li>
+          <li><span class="bonus-badge">BÔNUS</span> Protocolos para crises emocionais (60–90s)</li>
+        </ul>
+
+        <a id="btnTop" class="btn js-buy"
+           href="https://pay.hotmart.com/Y103542772O" target="_blank" rel="noopener nofollow">
+           QUERO AJUDAR MEU FILHO AGORA ➔
+        </a>
+      </div>
+
+      <div>
+        <picture>
+          <source srcset="capa.webp" type="image/webp">
+          <img src="capa.jpg" alt="Capa do ebook Criança Emocionalmente Forte" style="border:3px solid var(--btn1)">
+        </picture>
+      </div>
+    </div>
+  </header>
+
+  <!-- O que você vai aprender -->
+  <section>
+    <div class="wrap">
+      <div class="card">
+        <h2 class="sec-title">Resultados em 7-21 dias</h2>
+        <div class="grid grid-2" style="gap:20px;margin-top:14px">
+          <div>
+            <p><strong>🌙 Sono:</strong></p>
+            <ul>
+              <li>Adormecimento mais rápido</li>
+              <li>Redução de pesadelos</li>
+              <li>Despertares noturnos diminuem</li>
+            </ul>
+          </div>
+          <div>
+            <p><strong>😊 Comportamento:</strong></p>
+            <ul>
+              <li>Menos explosões emocionais</li>
+              <li>Mais cooperação</li>
+              <li>Autonomia emocional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona (CTA #2) -->
+  <section>
+    <div class="wrap">
+      <div class="card">
+        <h2 class="sec-title">Funciona para crianças de 3 a 12 anos</h2>
+        <ul style="margin:0 0 14px 18px">
+          <li><strong>🟢 Estado verde (calmo):</strong> Mantenha a conexão</li>
+          <li><strong>🟡 Estado amarelo (irritado):</strong> Use respiração espelho</li>
+          <li><strong>🔴 Estado vermelho (crise):</strong> Aplique o protocolo de 60s</li>
+        </ul>
+        <div class="cta-block">
+          <span><strong>Oferta válida até <span id="countdown" class="countdown"></span></strong></span>
+          <a id="btnMiddle" class="btn js-buy"
+             href="https://pay.hotmart.com/Y103542772O" target="_blank" rel="noopener nofollow">
+             GARANTIR MEU EBOOK ➔
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perguntas frequentes -->
+  <section>
+    <div class="wrap">
+      <div class="card">
+        <h2 class="faq-title">Perguntas frequentes</h2>
+        <p><strong>Quanto tempo por dia?</strong> 3–5 minutos de rituais e técnicas rápidas.</p>
+        <p><strong>Para qual idade?</strong> Crianças de 3 a 12 anos, com adaptações por faixa etária.</p>
+        <p><strong>Como recebo?</strong> Acesso imediato por e-mail após confirmação de pagamento na Hotmart.</p>
+        <p><strong>Garantia:</strong> 7 dias incondicionais. Se não ajudar sua família, reembolsamos 100%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="wrap" style="padding:24px 18px;color:#c0d4f0;text-align:center">
+    © 2023 Criança Emocionalmente Forte
+  </footer>
+
+  <!-- Barra fixa inferior (CTA #3) -->
+  <div class="sticky-cta" role="region" aria-label="Ação rápida">
+    <div class="wrap bar">
+      <small><strong>PROMOÇÃO:</strong> R$ 27,90 (<s>R$ 47,90</s>)</small>
+      <a id="btnSticky" class="btn js-buy"
+         href="https://pay.hotmart.com/Y103542772O" target="_blank" rel="noopener nofollow">
+         COMPRAR COM DESCONTO ➔
+      </a>
+    </div>
+  </div>
+
+  <!-- JS (Hotmart + UTMs + InitiateCheckout) -->
+  <script>
+    // Countdown Timer (24h) - reinicia a cada refresh (mantive como estava)
+    function updateCountdown(){
+      var end = new Date();
+      end.setHours(end.getHours() + 24);
+      var now = new Date();
+      var diff = end - now;
+      var h = Math.floor(diff / (1000 * 60 * 60));
+      var m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var s = Math.floor((diff % (1000 * 60)) / 1000);
+      var el = document.getElementById('countdown');
+      if (el) el.innerHTML = h + "h " + m + "m " + s + "s";
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Pixel + UTMs -> Hotmart (aplica a todos os links com .js-buy)
+    (function () {
+      var CHECKOUT_URL = "https://pay.hotmart.com/Y103542772O";
+      var params = new URLSearchParams(window.location.search || "");
+
+      document.querySelectorAll("a.js-buy").forEach(function (a) {
+        try {
+          var url = new URL(CHECKOUT_URL);
+
+          // repassa todos os parâmetros (utm_source, utm_campaign, etc.)
+          params.forEach(function (value, key) {
+            url.searchParams.set(key, value);
+          });
+
+          a.href = url.toString();
+
+          // dispara InitiateCheckout no clique
+          a.addEventListener("click", function () {
+            if (typeof fbq === "function") {
+              fbq("track", "InitiateCheckout");
+            }
+          });
+        } catch (e) {
+          // fallback
+          a.href = CHECKOUT_URL;
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
