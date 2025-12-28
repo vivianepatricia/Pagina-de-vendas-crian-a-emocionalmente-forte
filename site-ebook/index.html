@@ -325,12 +325,6 @@
 
           a.href = url.toString();
 
-          // dispara InitiateCheckout no clique
-          a.addEventListener("click", function () {
-            if (typeof fbq === "function") {
-              fbq("track", "InitiateCheckout");
-            }
-          });
         } catch (e) {
           // fallback
           a.href = CHECKOUT_URL;
@@ -341,3 +335,4 @@
 
 </body>
 </html>
+
