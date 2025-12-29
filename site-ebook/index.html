@@ -27,7 +27,7 @@
   <meta name="twitter:image" content="https://criancaemocionalmenteforte.com/og.jpg?v=1">
   <link rel="icon" href="/favicon.ico">
 
-  <!-- Estilos originais (com pequenos acréscimos) -->
+  <!-- Estilos -->
   <style>
     :root{
       --bg1:#153a67;
@@ -294,7 +294,7 @@
 
   <!-- JS (Hotmart + UTMs + InitiateCheckout) -->
   <script>
-    // Countdown Timer (24h) - reinicia a cada refresh (mantive como estava)
+    // Countdown Timer (24h)
     function updateCountdown(){
       var end = new Date();
       end.setHours(end.getHours() + 24);
@@ -309,30 +309,54 @@
     setInterval(updateCountdown, 1000);
     updateCountdown();
 
+    // Config
+    var CHECKOUT_URL = "https://pay.hotmart.com/Y103542772O";
+    var PRODUCT_ID = "Y103542772O";
+    var PRICE = 27.90; // número: usar ponto, não vírgula
+    var CURRENCY = "BRL";
+
     // Pixel + UTMs -> Hotmart (aplica a todos os links com .js-buy)
     (function () {
-      var CHECKOUT_URL = "https://pay.hotmart.com/Y103542772O";
       var params = new URLSearchParams(window.location.search || "");
 
       document.querySelectorAll("a.js-buy").forEach(function (a) {
         try {
           var url = new URL(CHECKOUT_URL);
 
-          // repassa todos os parâmetros (utm_source, utm_campaign, etc.)
+          // repassa todos os parâmetros (utm_source, utm_campaign, test_event_code, etc.)
           params.forEach(function (value, key) {
             url.searchParams.set(key, value);
           });
 
           a.href = url.toString();
-
         } catch (e) {
-          // fallback
           a.href = CHECKOUT_URL;
         }
+      });
+    })();
+
+    // Disparo do InitiateCheckout no clique dos botões .js-buy
+    (function () {
+      function fireInitiateCheckoutOnce(el){
+        if (el.dataset.icSent === "1") return;
+        el.dataset.icSent = "1";
+        try {
+          fbq('track', 'InitiateCheckout', {
+            value: PRICE,
+            currency: CURRENCY,
+            contents: [{ id: PRODUCT_ID, quantity: 1, item_price: PRICE }],
+            content_type: 'product'
+          });
+        } catch (e) {}
+        // libera novamente após um curto período (para novos cliques, se houver)
+        setTimeout(function(){ el.dataset.icSent = "0"; }, 1500);
+      }
+
+      document.querySelectorAll("a.js-buy").forEach(function (a) {
+        a.addEventListener('click', function(){ fireInitiateCheckoutOnce(a); }, {passive:true});
       });
     })();
   </script>
 
 </body>
 </html>
-
