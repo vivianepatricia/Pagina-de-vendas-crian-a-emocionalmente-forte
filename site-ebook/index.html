@@ -181,6 +181,9 @@
   <!-- HERO (CTA #1) -->
   <header>
     <div class="wrap hero">
+      
+      <span id="countdown" class="countdown"></span>
+
       <div>
         <span class="urgency-badge">OFERTA POR TEMPO LIMITADO</span>
         <p class="kicker">Ansiedade infantil • Sono • Comportamento</p>
@@ -357,6 +360,32 @@
       });
     })();
   </script>
+  
+<script>
+  function updateCountdown() {
+    const end = new Date();
+    end.setHours(end.getHours() + 24, 0, 0, 0); // Define para 24h após o carregamento
+
+    const x = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = end - now;
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  }
+
+  updateCountdown();
+</script>
 
 </body>
 </html>
+
